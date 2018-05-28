@@ -69,14 +69,7 @@ if(isset($_POST['password'])) {
 $found_user = attempt_login($username, $password,$connection);
 
     if ($found_user) {			
-		$cookie_name = "user";
-		
-		$a = $username;
-	
-		setcookie($cookie_name, $a, time() + (86400 * 30), "/");
-
 		header("Location: " . "index.html");
-
    
     } else {
       // Failure

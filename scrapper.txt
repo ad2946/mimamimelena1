@@ -4,4 +4,3 @@ precio:
 //ul[@class='woo-entry-inner clr']//span[@class='woocommerce-Price-amount amount']
 descripcion:
 //ul[@class='woo-entry-inner clr']//li[@class='title']/a[@href]
-blablabla
