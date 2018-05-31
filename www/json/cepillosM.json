@@ -1,0 +1,33 @@
+[{
+	"id_Producto":"1","id_Marca":"1","id_Categoria":"1",
+	"Nombre":"Cepillo Redondo de Cerdas de Jabalí 25 mm","Precio":"55.50","Imagen":"images/hair-boarbrush-25.jpg",
+	"Descripcion":"","Subcategoria":""
+},{
+	"id_Producto":"2","id_Marca":"1","id_Categoria":"1",
+	"Nombre":"Cepillo Redondo de Cerdas de Jabalí 35 mm","Precio":"64.50","Imagen":"images/hair-boarbrush-35.jpg",
+	"Descripcion":"","Subcategoria":""
+},{
+	"id_Producto":"3","id_Marca":"1","id_Categoria":"1",
+	"Nombre":"Cepillo Redondo de Cerdas de Jabalí 45 mm","Precio":"70.00","Imagen":"images/hair-boarbrush-45.jpg",
+	"Descripcion":"","Subcategoria":""
+},{
+	"id_Producto":"4","id_Marca":"1","id_Categoria":"1",
+	"Nombre":"Moroccanoil Cepillo Plano de Cerámica","Precio":"27.00","Imagen":"images/hair_ceramicbrush_paddle.jpg",
+	"Descripcion":"","Subcategoria":""
+},{
+	"id_Producto":"5","id_Marca":"1","id_Categoria":"1",
+	"Nombre":"Moroccanoil Cepillo Redondo de Cerámica 35 mm","Precio":"27.00","Imagen":"images/hair_ceramicbrush_35.jpg",
+	"Descripcion":"","Subcategoria":""
+},{
+	"id_Producto":"6","id_Marca":"1","id_Categoria":"1",
+	"Nombre":"Moroccanoil Cepillo Redondo de Cerámica 55 mm","Precio":"32.50","Imagen":"images/hair_ceramicbrush_55.jpg",
+	"Descripcion":"","Subcategoria":""
+},{
+	"id_Producto":"7","id_Marca":"1","id_Categoria":"1",
+	"Nombre":"Moroccanoil Cepillo Térmico Cerámica Iónica Redondo 25mm.","Precio":"19.50","Imagen":"images/hair_ceramicbrush_25.jpg",
+	"Descripcion":"","Subcategoria":""
+},{
+	"id_Producto":"8","id_Marca":"1","id_Categoria":"1",
+	"Nombre":"Cepillo clásico de cerdas de jabalí","Precio":"55.50","Imagen":"images/hair_boarbrush_paddle.jpg",
+	"Descripcion":"","Subcategoria":""
+}]

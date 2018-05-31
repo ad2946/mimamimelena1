@@ -1,0 +1,99 @@
+[{
+	"id_productoM": "0",
+	"tipo_producto":"champu",
+	"nombre":"CHAMPÚ SECO TONOS CLAROS",
+	"imagen":"images/dryshampoolight.png",
+	"precio":"27.00",
+	"descripcion_Producto":"Para Todo Tipo de Cabello:  Moroccanoil Dry Shampoo está enriquecido con Aceite de Argán ,El Champú Seco Tonos Claros Moroccanoil® contiene almidones ultra finos de arroz que absorben la grasa y los olores dejando el cabello renovado, fresco y con volumen. La fórmula, impregnada con aceite de argán, provee protección UV y contiene matices violetas para equilibrar los tonos cobrizos en cabellos rubios, y resaltar lo mejor en cabellos con tonos claros."
+},{
+	"id_productoM": "1",
+	"tipo_producto":"champu",
+	"nombre":"CHAMPÚ SECO TONOS OSCUROS",
+	"imagen":"images/dryshampoodark.png",
+	"precio":"27.00",
+	"descripcion_Producto":"Para Todo Tipo de Cabello : Moroccanoil Dry Shampoo está enriquecido con Aceite de Argán ,El Champú Seco Oscuros Moroccanoil® contiene almidones ultra finos de arroz que absorben la grasa y los olores dejando el cabello limpio y fresco. La fórmula, impregnada con aceite de argán, provee protección UV y actúa de inmediato sin dejar residuos opacos mientras mantiene la riqueza natural de los tonos de cabellos oscuros y morenos."
+},{
+	"id_productoM": "2",
+	"tipo_producto":"champu",
+	"nombre":"Moroccanoil Clarifying Shampoo",
+	"imagen":"images/hair_clarifying_shampoo.jpg",
+	"precio":"24.50",
+	"descripcion_Producto":"PARA CABELLO SOBRECARGADO POR LA ACUMULACIÓN DE PRODUCTOS :  Champú Purificante nutre su cabello mientras limpia y elimina suavemente las impurezas. No altera el color. Sin sulfatos, fosfatos ni parabenos. Puede ser usado antes de un tratamiento de color, permanente, o tratamientos químicos y obtener mejores resultados."
+},{
+	"id_productoM": "3",
+	"tipo_producto":"acondicionador",
+	"nombre":"Moroccanoil Extra Volume Conditioner",
+	"imagen":"images/hair_extravolume_conditioner.jpg",
+	"precio":"26.50",
+	"descripcion_Producto":"PARA CABELLO FINO : Desenreda suavemente su cabello mientras añade volumen. El Acondicionador Extra Volumen Moroccanoil® provee volumen, cuerpo, brillo, y manejabilidad al cabello fino sin hacerlo más pesado o comprimido."
+},{
+	"id_productoM": "4",
+	"tipo_producto":"champu",
+	"nombre":"Moroccanoil Extra Volume Shampoo",
+	"imagen":"images/extra_volume.jpg",
+	"precio":"24.50",
+	"descripcion_Producto":"PARA CABELLO FINO  : ¡Añada volumen y llene de vida el cabello fino y apagado! El Champú Extra Volumen Moroccanoil® actúa sin añadir peso, limpia suavemente, y añade volumen al cabello fino y sin vida. Impregnado con aceite de argán rico en antioxidantes y nutrientes revitalizantes"
+},{
+	"id_productoM": "5",
+	"tipo_producto":"acondicionador",
+	"nombre":"Moroccanoil Hydrating Conditioner",
+	"imagen":"images/Hydrating_Conditioner.png",
+	"precio":"24.50",
+	"descripcion_Producto":"PARA TODO TIPO DE CABELLO : Acondicione y desenrede el cabello deshidratado con el Acondicionador Hidratante Moroccanoil® . Esta fórmula suave de uso diario deja el cabello más suave, manejable, y facilita la creación de estilos y peinados."
+},{
+	"id_productoM": "6",
+	"tipo_producto":"champu",
+	"nombre":"Moroccanoil Hydrating Shampoo",
+	"imagen":"images/hair_hydrating_shampoo.jpg",
+	"precio":"22.00",
+	"descripcion_Producto":"PARA TODO TIPO DE CABELLO : Aporte al cabello seco y deshidratado toda la hidración que tanto necesita. El Champú Hidratante Moroccanoil® acondiciona el cabello con aceite de argán rico en antioxidantes, vitamina A, vitamina E, y algas rojas para lograr un cabello que se ve y se siente más saludable."
+},{
+	"id_productoM": "7",
+	"tipo_producto":"acondicionador",
+	"nombre":"Moroccanoil Moisture Repair Conditioner",
+	"imagen":"images/acond._reparador.jpg",
+	"precio":"22.05",
+	"descripcion_Producto":"PARA EL CABELLO DEBILITADO O DAÑADO : Recupere el cabello dañado a causa de los tintes, procesos químicos, o el uso del calor para peinados y estilismos. El Acondicionador Reparador Hidratante Moroccanoil® acondiciona y desenreda suave y efectivamente el cabello dejándolo hidratado, fuerte y manejable."
+},{
+	"id_productoM": "8",
+	"tipo_producto":"champú",
+	"nombre":"Moroccanoil Moisture Repair Shampoo",
+	"imagen":"images/champu_reparador.jpg",
+	"precio":"22.50",
+	"descripcion_Producto":"PARA EL CABELLO DEBILITADO O DAÑADO : Repare el cabello dañado a causa de los tintes, procesos químicos, o el uso del calor para peinados y estilismos. El Champú Reparador Hidratante Moroccanoil® limpia suave y efectivamente el cabello dejándolo con vida, nutrido, fuerte y manejable."
+},{
+	"id_productoM": "9",
+	"tipo_producto":"PACK",
+	"nombre":"MOROCCANOIL PACK HIDRATACIÓN",
+	"imagen":"images/moroccanoil_hydrating_champ_-_acond_-_tratanmieto_hydrating.jpg",
+	"precio":"81.50",
+	"descripcion_Producto":"Para cabellos que necesitan un extra de hidratación…"
+},{
+	"id_productoM": "10",
+	"tipo_producto":"PACK",
+	"nombre":"MOROCCANOIL PACK REPAIR",
+	"imagen":"images/pack-morocanoil-reparador3.jpg",
+	"precio":"75.00",
+	"descripcion_Producto":"Esta caja de regalo no necesita envoltorio. ¡Es el regalo perfecto!"
+},{
+	"id_productoM": "11",
+	"tipo_producto":"PACK",
+	"nombre":"MOROCCANOIL PACK VOLUMEN",
+	"imagen":"images/pack-morocanoil-volumen3.jpg",
+	"precio":"93.50",
+	"descripcion_Producto":"Esta caja de regalo no necesita envoltorio. ¡Es el regalo perfecto!"
+},{
+	"id_productoM": "12",
+	"tipo_producto":"acondicionador",
+	"nombre":"MOROCCANOIL SMOOTH CONDITIONER REDUCTOR VOLUMEN",
+	"imagen":"images/hair_smoothing_conditioner.jpg",
+	"precio":"28.50",
+	"descripcion_Producto":"PARA TODO TIPO DE CABELLO : Esta fórmula acondiciona, desenreda, suaviza y controla el cabello rebelde y encrespado. El Acondicionador Suavizante Moroccanoil®, incluye nuestro ingrediente exclusivo AminoRenew™, que restaura los aminoácidos vencidos para fortalecer y alinear la estructura de la queratina natural del cabello."
+},{
+	"id_productoM": "13",
+	"tipo_producto":"champu",
+	"nombre":"MOROCCANOIL SMOOTH SHAMPOO REDUCTOR VOLUMEN.",
+	"imagen":"images/hair_smoothing_shampoo.jpg",
+	"precio":"26.50",
+	"descripcion_Producto":"PARA TODO TIPO DE CABELLO: Suavice y controle el cabello rebelde y encrespado con esta suave fórmula limpiadora. El Champú Suavizante Moroccanoil®, con nuestro exclusivo ingrediente AminoRenew™, restaura los aminoácidos vencidos para fortalecer y alinear la estructura de la queratina natural del cabello."
+}]

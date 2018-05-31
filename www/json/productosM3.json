@@ -1,0 +1,55 @@
+[{
+	"id_Producto": "44",
+	"id_Marca":"1",
+	"id_Categoria":"7",
+	"Nombre":"Moroccanoil MASCARILLA HIDRATANTE INTENSA",
+	"Precio":"37.00",
+	"Imagen":"images/hair_intensehydratingmask.jpg",
+	"Descripcion":"PARA CABELLO SECO DE MEDIO A GRUESO : Disfrute de un tratamiento que en cinco minutos revitaliza su cabello. La Mascarilla Hidratante Intensa Moroccanoil® aporta un acondicionamiento profundo para cabello seco, de medio a grueso.",
+	"Subcategoria":"hidratacion"
+},{
+	"id_Producto": "45",
+	"id_Marca":"1",
+	"id_Categoria":"7",
+	"Nombre":"Moroccanoil MASCARILLA HIDRATANTE ULTRALIGERA",
+	"Precio":"42.50",
+	"Imagen":"images/hair_weightlesshydratingmask.jpg",
+	"Descripcion":"PARA CABELLO FINO Y SECO : Reviva el cabello seco y sin vida con esta mascarilla capilar que en cinco minutos hidrata su cabello. La Mascarilla Hidratante Ultraligera Moroccanoil® es un tratamiento acondicionador profundo, cremoso, y ligero formulado a base de aceite de argán e ingredientes nutritivos.",
+	"Subcategoria":"hidratacion"
+},{
+	"id_Producto": "46",
+	"id_Marca":"1",
+	"id_Categoria":"7",
+	"Nombre":"Moroccanoil Repair Hair Mask",
+	"Precio":"45.50",
+	"Imagen":"images/hair_restorativemask.jpg",
+	"Descripcion":"PARA CABELLO DEBILITADO Y DAÑADO : La Mascarilla Capilar Reconstituyente Moroccanoil® está formulada para el cabello que necesita reparación inmediata. Este tratamiento revitalizador capilar renueva el cabello en tan solo 5-7 minutos, restaurando las proteínas de la fibra capilar que han sido dañadas por procesos químicos o por el uso de herramientas térmicas para realizar peinados y estilismos.",
+	"Subcategoria":"reparador"
+},{
+	"id_Producto": "47",
+	"id_Marca":"1",
+	"id_Categoria":"7",
+	"Nombre":"MOROCCANOIL SMOOTH MASK REDUCTORA VOLUMEN",
+	"Precio":"45.50",
+	"Imagen":"images/hair_smoothingmask.jpg",
+	"Descripcion":"PARA CABELLO REBELDE Y ENCRESPADO: Esta mascarilla altamente altamente concentrada con mantecaa de argán, suaviza y controla el cabello rebelde y encrespado. La Mascarilla Suavizante Moroccanoil® está enriquecida con manteca de argán, aceite de argán y ácidos grasos derivados del coco para hidratar y nutrir profunda e intensamente.",
+	"Subcategoria":"volumen"
+},{
+	"id_Producto": "48",
+	"id_Marca":"1",
+	"id_Categoria":"4",
+	"Nombre":"Pack Intense Hydrating Mask",
+	"Precio":"40.40",
+	"Imagen":"images/set_azul.jpg",
+	"Descripcion":"Moroccanoil Intense Hydrating Mask. Hidratante intensa para cabello medio, seco y áspero.",
+	"Subcategoria":"hidratacion"
+},{
+	"id_Producto": "49",
+	"id_Marca":"1",
+	"id_Categoria":"4",
+	"Nombre":"Pack Restorative Hair Mask",
+	"Precio":"49.70",
+	"Imagen":"images/set_naranja.jpeg",
+	"Descripcion":"Set formado por dos Marcarillas Restorative Hair Mask de 75 ml. y 250 ml. ideal para tener una en casa y otra en el neceser de viaje.",
+	"Subcategoria":"reparador"
+}]
