@@ -2158,10 +2158,10 @@ p .btn {
 	position: relative;
 	top: 0;
 	margin: 0 15px;
-	-webkit-transition: all 200ms ease-out;
-	   -moz-transition: all 200ms ease-out;
-		 -o-transition: all 200ms ease-out;
-			transition: all 200ms ease-out;
+	-webkit-transition: all 800ms ease-out;
+	   -moz-transition: all 800ms ease-out;
+		 -o-transition: all 800ms ease-out;
+			transition: all 800ms ease-out;
 }
 .tabs-circle-top .tab a {
     display: table-cell;
@@ -2240,10 +2240,10 @@ p .btn {
     border-bottom: 2px solid transparent;
 	border-radius: 3px;
 	margin: 0 15px;
-	-webkit-transition: all 200ms ease-out;
-	   -moz-transition: all 200ms ease-out;
-		 -o-transition: all 200ms ease-out;
-			transition: all 200ms ease-out;
+	-webkit-transition: all 800ms ease-out;
+	   -moz-transition: all 800ms ease-out;
+		 -o-transition: all 800ms ease-out;
+			transition: all 800ms ease-out;
 }
 .tabs-2-big-top .tab:before, .tabs-2-big-top .tab:after {
 	content: '';
