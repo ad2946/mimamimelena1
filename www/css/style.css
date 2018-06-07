@@ -1,0 +1,58 @@
+img{
+    height: 200px;
+    width: 200px;
+   	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a .logo {
+    -webkit-transition: all 200ms ease-out;
+       -moz-transition: all 200ms ease-out;
+         -o-transition: all 200ms ease-out;
+            transition: all 200ms ease-out;
+}
+a:hover .logo {
+	opacity: .6;
+}
+
+.navbar-brand img {
+	max-height: 40px;
+	max-width: 40px;
+}
+
+.navbar {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    position: relative;
+    z-index: 8000;
+    min-height: inherit;
+}
+
+.frase{
+    text-align: center;
+}
+
+h1{
+	text-align: center;
+	font-size: 2em;
+	color:#db70b8;
+	font-weight: bold;
+}
+
+h2{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+p{
+	text-align: center;
+}
+
+.centrado{
+	text-align: center;
+	border:1px solid black;
+	font-size: 0.5em;
+}

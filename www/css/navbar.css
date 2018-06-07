@@ -1,0 +1,28 @@
+.navbar-custom{
+	background-color:#cc6699;
+	border-color:#cc6699;
+
+}
+
+.navbar-custom li a{
+	color: black;
+	text-decoration-color: white;
+}
+
+.navbar-custom button:hover{
+	background-color: #cc3399;
+}
+
+.navbar-custom button:active{
+	vertical-align: top;
+    padding: 8px 13px 6px;
+}
+
+
+.navbar-inverse .navbar-nav > li > a {
+    color:white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
