@@ -19,8 +19,11 @@ function find_user_by_username($username, $password, $connection) {
 		
 		
 		$safe_username = mysqli_real_escape_string($connection, $username);
-		
-		$query  = "SELECT * FROM `usuario` WHERE Nombre = '$username' AND Password ='$password' ";
+	   	
+    
+		$query  = "SELECT password ";
+		$query .= "FROM usuario ";
+		$query .= "WHERE usuario = '$username'";
 		$query .= "LIMIT 1";  //Como usename es primario no lo necesito
 		echo "$query <br>";
 		$user_set = mysqli_query($connection, $query);
@@ -56,9 +59,9 @@ function attempt_login($username, $password, $connection) {
 ?>
 <?php
 echo "Esto es login.php";
-if(isset($_POST['username'])) { 
+if(isset($_POST['usuario'])) { 
     // check if the username has been set
-	$username = $_POST["username"];
+	$username = $_POST["usuario"];
 }
 if(isset($_POST['password'])) { 
     // check if the username has been set
@@ -66,21 +69,21 @@ if(isset($_POST['password'])) {
 }
 
 
-$found_user = attempt_login($username, $password,$connection);
+$found_user = attempt_login($username, $password, $connection);
 
-    if ($found_user) {			
-		$cookie_name = "user";
+    if ($found_user) {
+      // Success
+			if(password_verify($password,$found_user["password"])){
+                header("Location: " . "index.html");
+            }
+            else{
+                header("Location: " . "error_login.php");
+            }
 		
-		$a = $username;
-	
-		setcookie($cookie_name, $a, time() + (86400 * 30), "/");
-
-		header("Location: " . "index.html");
-   
+     
     } else {
       // Failure
-     echo "Username/password not found.";
-	  header("Location: " . "inicio.html");
+	  header("Location: " . "inicioEn.html");
     }
 ?>
 
