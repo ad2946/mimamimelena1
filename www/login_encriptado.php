@@ -61,10 +61,12 @@ function attempt_login($username, $password, $connection) {
 echo "Esto es login.php";
 if(isset($_POST['usuario'])) { 
     // check if the username has been set
+    $_SESSION['usuario'] = $_POST['usuario'];
 	$username = $_POST["usuario"];
 }
 if(isset($_POST['password'])) { 
     // check if the username has been set
+    $_SESSION['password'] = $_POST['password'];
 	$password = $_POST["password"];
 }
 
