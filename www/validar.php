@@ -57,13 +57,19 @@
 		}
 	
 		function infoUsuario($username){
+			require("php/db.php");
 			$sel_query="SELECT * FROM usuario WHERE usuario='$username' LIMIT 1";
-			$result = mysqli_query($connection,$sel_query);
+			$result = mysqli_query($con,$sel_query);
 			$json = "[ "; // se deja espacio para que al quitar ?ltimo car?cter no rompa si no hay resultados
-			    while($row = mysqli_fetch_assoc($result)) { 
-			    $json = $json.'{"nombre":'.$row["nombre"].',"apellidos":'.$row["apellidos"].',"usuario":"'.$row["usuario"].'","email":'.$row["email"].',"numero":"'.$row["numero"].'"},';
-			    } 
+			while($row = mysqli_fetch_assoc($result)) {
+				$_SESSION["nombre"] = $row["nombre"];
+				$_SESSION["apellidos"]=$row["apellidos"];
+				$_SESSION["email"] =$row["email"];
+				$_SESSION["numero"] = $row["numero"];
+			    //$json = $json.'{"nombre":'.$row["nombre"].',"apellidos":'.$row["apellidos"].',"usuario":"'.$row["usuario"].'","email":'.$row["email"].',"numero":"'.$row["numero"].'"},';
+			} 
 			$json = substr($json, 0, -1)."]"; // se quita la ?ltima coma y se cierra el array
+			return $json;
 		}
 		?>
 
@@ -75,7 +81,6 @@
 		}
 		if(isset($_POST['password'])) { 
 		    // check if the username has been set
-		    $_SESSION['password'] = $_POST['password'];
 			$password = $_POST["password"];
 		}
 
@@ -84,7 +89,9 @@
 		    if ($found_user) {
 		      // Success
 					if(password_verify($password,$found_user["password"])){
-		                header("Location: " . "index2.php");
+						$json = infoUsuario($username);
+		                header("Location: " . "index.php");
+		             	echo $json;
 		                //header("Location: " . "panel.php");
 		            }
 		            else{
@@ -92,7 +99,7 @@
 		            }
 		    } else {
 		      // Failure
-			  header("Location: " . "inicio.html");
+			  header("Location: " . "inicioregistro.php");
 		    }
 		?>
 

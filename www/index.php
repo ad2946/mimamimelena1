@@ -4,6 +4,8 @@ include 'php/db.php';
 
 if(isset($_SESSION['usuario'])) {
   $usuario = $_SESSION['usuario'];
+  $nombre = $_SESSION['nombre'];
+  $apellidos = $_SESSION['apellidos'];
 }
 ?>
 
@@ -99,11 +101,11 @@ if(isset($_SESSION['usuario'])) {
 
 								<?php
 									if(isset($_SESSION['usuario'])){?>
-										<li><a href='#'><span class='glyphicon glyphicon-user'></span><?php echo $usuario; ?></a></li>
+										<li><a href='#'><span class='glyphicon glyphicon-user'></span> <?php echo $nombre." ".$apellidos; ?></a></li>
 								<?php
 									}else {
 								?>
-									<li><a href='inicio.html'><span class='glyphicon glyphicon-user'></span> INICIA SESION</a></li>
+									<li><a href='inicioregistro.php'><span class='glyphicon glyphicon-user'></span> INICIA SESION</a></li>
 								<?php
 									}
 								?>

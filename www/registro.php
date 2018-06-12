@@ -70,13 +70,13 @@ if(isset($_POST['email'])) {
     // check if the username has been set
 	$email = $_POST["email"];
 }
-if(isset($_POST['username'])) { 
+if(isset($_POST['user'])) { 
     // check if the username has been set
-	$username = $_POST["username"];
+	$username = $_POST["user"];
 }
-if(isset($_POST['password'])) { 
+if(isset($_POST['pass'])) { 
     // check if the username has been set
-	$password = $_POST["password"];
+	$password = $_POST["pass"];
 }
 if(isset($_POST['numero'])) { 
     // check if the username has been set
@@ -103,7 +103,7 @@ else {
 			$result = mysqli_query($connection, $query);
 
 			if ($result) {
-				echo "El usuario se ha agregado correctamente";
+				header("Location: index.html");
 			} else {
 				die("Database query failed. " . mysqli_error($connection));
 	}

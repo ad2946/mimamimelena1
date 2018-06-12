@@ -12,12 +12,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta name="description" content="">
 		<meta name="author" content="">
-
-		<title> Login </title>
-		<!-- Bootstrap Core CSS -->
-		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
 		
+		<title>MimaMiMelena</title>
+		
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
 		<!-- Customizable CSS -->
 		<link href="assets/css/main.css" rel="stylesheet" data-skrollr-stylesheet>
@@ -34,8 +34,7 @@
 		<link href="assets/fonts/fontello.css" rel="stylesheet">
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
-</head>
+		<link rel="shortcut icon" href="assets/images/moroccanoil_logo.ico">
 
 <body>
 <!-- ============================================================= HEADER ============================================================= -->
@@ -102,13 +101,9 @@
 		<section id="hero">
 			<div class="container inner">
 
-					<div class="center-block text-center">
-						<header>
-							<h1>Iniciar Sesi&oacuten</h1>
-						</header>
-					</div><!-- /.col -->
+				<div class="col-sm-6 outer-top-md. inner-right-sm">
+					<h2>Iniciar Sesi&oacuten</h2>
 
-				<div class="row inner-top-md">
 				    <form action="validar.php" method="post">
 				      <p>Usuario:
 				        <input type="text" name="usuario" value="" required />
@@ -118,8 +113,27 @@
 				      </p>
 				      <input type="submit" name="submit" value="Entrar" />
 				    </form>
-				    
+			
 				<a href="registro.html" > Registrarse</a>
+				</div>
+				<div class="col-sm-6 outer-top-md inner-left-sm border-left">
+					<h2>Registrarse</h2>
+					<form action="registro.php" method="post">
+		              <p>Nombre:
+		                <input type="text" name="nombre" value="" required/>
+		              <p>Apellidos:
+		                <input type="text" name="apellidos" value="" required/>
+		              <p>Email:
+		                <input type="email" name="email" value="" required/>
+		              <p>Numero:
+		                <input type="text" name="nombre" value="" required/>
+		              <p>Username:
+		                <input type="text" name="username" value="" required/>
+		              </p>
+		              <p>Password:
+		                <input type="password" name="password" value="" required/>
+		              </p>
+		              <input type="button" name="registro" value="Registrarse" />
 				</div>
 			</div>
 		</section>
@@ -132,7 +146,6 @@
 		<script src="assets/js/jquery.easing.1.3.min.js"></script>
 		<script src="assets/js/jquery.form.js"></script>
 		<script src="assets/js/jquery.validate.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
 		<script src="assets/js/skrollr.min.js"></script>
 		<script src="assets/js/skrollr.stylesheets.min.js"></script>
