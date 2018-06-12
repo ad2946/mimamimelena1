@@ -1,3 +1,12 @@
+<?php
+session_start();
+include 'php/db.php';
+
+if(isset($_SESSION['usuario'])) {
+  $usuario = $_SESSION['usuario'];
+}
+?>
+
 <!DOCTYPE html>
 
 <html lang="es">
@@ -51,7 +60,6 @@
 						
 						<ul class="social pull-right">
 							<li><a href="#"><i class="icon-s-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-s-gplus"></i></a></li>
 							<li><a href="#"><i class="icon-s-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-s-pinterest"></i></a></li>
 						</ul><!-- /.social -->
@@ -87,7 +95,19 @@
 								<li><a href="#productos" class="scroll-to" data-anchor-offset="0">PRODUCTOS</a></li>
 								<li><a href="#estilistas" class="scroll-to" data-anchor-offset="0">ESTILISTAS</a></li>
 								<li><a href="#footer" class="scroll-to" data-anchor-offset="0">CONTACTO</a></li>
-								<li><a href="inicio.php"><span class="glyphicon glyphicon-user"></span> INICIA SESION</a></li>							
+								<li id="inicioSesion"></li>
+
+								<?php
+									if(isset($_SESSION['usuario'])){?>
+										<li><a href='#'><span class='glyphicon glyphicon-user'></span><?php echo $usuario; ?></a></li>
+								<?php
+									}else {
+								?>
+									<li><a href='inicio.html'><span class='glyphicon glyphicon-user'></span> INICIA SESION</a></li>
+								<?php
+									}
+								?>
+																
 							</ul><!-- /.nav -->
 							
 							<!-- ============================================================= MAIN NAVIGATION : END ============================================================= -->

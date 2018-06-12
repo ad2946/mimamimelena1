@@ -1,3 +1,10 @@
+<?php
+	session_start();
+	include 'php/db.php';
+	if(isset($_SESSION['usuario'])){
+	//echo '<script> window.location="index2.php"; </script>';
+	}
+?>
 <html>
 <head>
 		<meta charset="utf-8">
@@ -89,6 +96,7 @@
 		
 		
 		<!-- ============================================================= HEADER : END ============================================================= -->
+
 		
 	<main>
 		<section id="hero">
@@ -101,12 +109,12 @@
 					</div><!-- /.col -->
 
 				<div class="row inner-top-md">
-				    <form action="login_encriptado.php" method="post">
+				    <form action="validar.php" method="post">
 				      <p>Usuario:
-				        <input type="text" name="usuario" value="" />
+				        <input type="text" name="usuario" value="" required />
 				      </p>
 				      <p>Contrase&ntildea:
-				        <input type="password" name="password" value="" />
+				        <input type="password" name="password" value="" required/>
 				      </p>
 				      <input type="submit" name="submit" value="Entrar" />
 				    </form>

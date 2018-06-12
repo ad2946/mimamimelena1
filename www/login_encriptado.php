@@ -24,8 +24,7 @@ function find_user_by_username($username, $password, $connection) {
 		$query  = "SELECT password ";
 		$query .= "FROM usuario ";
 		$query .= "WHERE usuario = '$username'";
-		$query .= "LIMIT 1";  //Como usename es primario no lo necesito
-		echo "$query <br>";
+		$query .= "LIMIT 1 ";
 		$user_set = mysqli_query($connection, $query);
 		if (!$user_set) {
 			die("Database query failed.");
@@ -54,38 +53,57 @@ function attempt_login($username, $password, $connection) {
 		}
 	}
 	
+function infoUsuario($username){
+	$sel_query="SELECT * FROM usuario WHERE usuario='$username' LIMIT 1";
+
+	$result = mysqli_query($connection,$sel_query);
+
+
+	$json = "[ "; // se deja espacio para que al quitar ?ltimo car?cter no rompa si no hay resultados
+	    while($row = mysqli_fetch_assoc($result)) { 
+	    $json = $json.'{"nombre":'.$row["nombre"].',"apellidos":'.$row["apellidos"].',"usuario":"'.$row["usuario"].'","email":'.$row["email"].',"numero":"'.$row["numero"].'"},';
+	    } 
+
+	$json = substr($json, 0, -1)."]"; // se quita la ?ltima coma y se cierra el array
+
+}
 	
 	
 ?>
+
 <?php
-echo "Esto es login.php";
 if(isset($_POST['usuario'])) { 
     // check if the username has been set
-    $_SESSION['usuario'] = $_POST['usuario'];
+    //$cookie_name = 'user';
+	//$cookie_value = $_POST['usuario'];
+	//setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+	
 	$username = $_POST["usuario"];
 }
 if(isset($_POST['password'])) { 
     // check if the username has been set
-    $_SESSION['password'] = $_POST['password'];
+    //$_SESSION['password'] = $_POST['password'];
 	$password = $_POST["password"];
 }
 
 
 $found_user = attempt_login($username, $password, $connection);
-
     if ($found_user) {
       // Success
 			if(password_verify($password,$found_user["password"])){
-                header("Location: " . "index.html");
+                header("Location: " . "index2.html");
+                session_start();
+    			$_SESSION['usuario'] = $_POST['usuario'];
+    			echo $_SESSION['usuario'];
             }
             else{
-                header("Location: " . "error_login.php");
+                //header("Location: " . "error_login.php");
             }
 		
      
     } else {
       // Failure
-	  header("Location: " . "inicioEn.html");
+	  header("Location: " . "inicio.html");
     }
 ?>
 
