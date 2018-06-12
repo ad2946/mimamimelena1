@@ -62,6 +62,7 @@
 			$result = mysqli_query($con,$sel_query);
 			$json = "[ "; // se deja espacio para que al quitar ?ltimo car?cter no rompa si no hay resultados
 			while($row = mysqli_fetch_assoc($result)) {
+				$_SESSION["id"] = $row["id_usuario"];
 				$_SESSION["nombre"] = $row["nombre"];
 				$_SESSION["apellidos"]=$row["apellidos"];
 				$_SESSION["email"] =$row["email"];

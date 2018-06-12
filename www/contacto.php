@@ -8,10 +8,9 @@ if(isset($_SESSION['usuario'])) {
   $apellidos = $_SESSION['apellidos'];
 }
 ?>
-
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="en">
 	<head>
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -20,9 +19,10 @@ if(isset($_SESSION['usuario'])) {
 		<meta name="description" content="">
 		<meta name="author" content="">
 		
-		<title>MimaMiMelena</title>
+		<title>Contacto</title>
 		
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
@@ -45,7 +45,7 @@ if(isset($_SESSION['usuario'])) {
 		
 	</head>
 	
-	<body id="top">
+	<body>
 		
 		<!-- ============================================================= HEADER ============================================================= -->
 		
@@ -62,6 +62,7 @@ if(isset($_SESSION['usuario'])) {
 						
 						<ul class="social pull-right">
 							<li><a href="#"><i class="icon-s-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-s-gplus"></i></a></li>
 							<li><a href="#"><i class="icon-s-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-s-pinterest"></i></a></li>
 						</ul><!-- /.social -->
@@ -92,12 +93,9 @@ if(isset($_SESSION['usuario'])) {
 							
 							<ul class="nav navbar-nav pull-right">
 							
-								<li><a href="#home" class="scroll-to" data-anchor-offset="0">HOME</a></li>
-								<li><a href="#cuidado" class="scroll-to" data-anchon-offset="0">CUIDADOS DEL CABELLO</a></li>
-								<li><a href="#productos" class="scroll-to" data-anchor-offset="0">PRODUCTOS</a></li>
-								<li><a href="#estilistas" class="scroll-to" data-anchor-offset="0">ESTILISTAS</a></li>
-								<li><a href="#footer" class="scroll-to" data-anchor-offset="0">CONTACTO</a></li>
-
+								<li><a href="index.html" class="scroll-to" data-anchor-offset="0">HOME</a></li>
+				
+								
 								<?php
 									if(isset($_SESSION['usuario'])){?>
 										<li><a href='infoUser.php'><span class='glyphicon glyphicon-user'></span> <?php echo $nombre." ".$apellidos; ?></a></li>
@@ -107,8 +105,7 @@ if(isset($_SESSION['usuario'])) {
 									<li><a href='inicioregistro.php'><span class='glyphicon glyphicon-user'></span> INICIA SESION</a></li>
 								<?php
 									}
-								?>
-																
+								?>							
 							</ul><!-- /.nav -->
 							
 							<!-- ============================================================= MAIN NAVIGATION : END ============================================================= -->
@@ -125,187 +122,102 @@ if(isset($_SESSION['usuario'])) {
 		<!-- ============================================================= MAIN ============================================================= -->
 		
 		<main>
-
-
 			
-			<!-- ============================================================= SECTION – HERO ============================================================= -->
-
-
-
-			<section id="home" class="img-bg img-bg-soft" style="background-image: url(assets/images/campaign1.jpg);">
-				<div class="container inner">
-					<div class="row">
-						<div class="col-md-8 col-sm-9">
-								<h1 class="fadeInLeft-1 light-color"><br>Tratamiendo Moroccanoil</h1>
-								<p class="fadeInLeft-2 light-color">LA INNOVACIÓN A BASE DE ACEITE DE ARGÁN QUE REVOLUCIONÓ EL CUIDADO DEL CABELLO.</p>
-							<!--<a href="productos.html" class="btn btn-large">Visita nuestro cat&aacutelogo</a>-->
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-				</div><!-- /.container -->
-			</section>
-
-
-
+			<!-- ============================================================= SECTION – CONTACT FORM ============================================================= -->
 			
-			<!-- ============================================================= SECTION – HERO : END ============================================================= -->				
-			
-			<!-- ============================================================= SECTION – CUIDADO·DEL·CABELLO ============================================================= -->
-			
-			<section id="cuidado">
+			<section id="contact-form">
 				<div class="container inner">
 					
 					<div class="row">
 						<div class="col-md-8 col-sm-9 center-block text-center">
 							<header>
-								<h1>Cuidados del cabello<br>&iquestQu&eacute productos debes usar?</h1>
-								<p>Te ayudamos a elegir los productos perfectos para cada fase en el cuidado de tu melena.</p>
+								<h1>Ponte en contacto</h1>
+								<p>Si tienes alguna duda o pregunta no dudes en contactar con nosotros</p>
 							</header>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 					
-					<div class="row inner-top-sm">
-						<div class="col-xs-12">
-							<div class="tabs tabs-reasons tabs-circle-top tab-container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row">
 								
-								<ul class="etabs text-center">
-									<li class="tab"><a href="#cc-1"><div>1</div>Lavado</a></li>
-									<li class="tab"><a href="#cc-2"><div>2</div>Acabado</a></li>
-								</ul><!-- /.etabs -->
+								<div class="col-sm-6 outer-top-md inner-right-sm">
+									
+									<h2>Deja un mensaje</h2>
+									
+									<form id="contactform" class="forms" action="contact.php" method="post">
+										
+										<div class="row">
+											<div class="col-sm-6">
+												<input type="text" name="name" class="form-control" placeholder="Nombre (Requerido)">
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+										
+										<div class="row">
+											<div class="col-sm-6">
+												<input type="email" name="email" class="form-control" placeholder="Email (Requerido)">
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+										
+										<div class="row">
+											<div class="col-sm-6">
+												<input type="text" name="subject" class="form-control" placeholder="Asunto">
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+										
+										<div class="row">
+											<div class="col-sm-12">
+												<textarea name="message" class="form-control" placeholder="Introduce tu mensaje"></textarea>
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+										
+										<button type="submit" class="btn btn-default btn-submit">Enviar</button>
+										
+									</form>
+									
+									<div id="response"></div>
+									
+								</div><!-- ./col -->
 								
-								<div class="panel-container">
+								<div class="col-sm-6 outer-top-md inner-left-sm border-left">
 									
-									<div class="tab-content" id="cc-1">
-										<div class="row">
-											
-											<div class="col-md-5 col-md-push-5 col-md-offset-1 col-sm-6 col-sm-push-6 inner-left-xs">
-												<figure><img src="images/lavado.jpg" alt=""></figure>
-											</div><!-- /.col -->
-											
-											<div class="col-md-5 col-md-pull-5 col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
-												<h3>Lavado</h3>
-												<p>Dependiendo de las exigencias de tu cabello, volumen, hidrataci&oacuten, reparaci&oacuten o color, los productos que utilices en el lavado ser&aacuten cruciales a la hora obtener el acabado perfecto.</p>
-											</div><!-- /.col -->
-											
-										</div><!-- /.row -->
-									</div><!-- /.tab-content -->
+									<h2>Contacto</h2>
+									<p>Dairy Peña Peluquería & Estética</p>
 									
-									<div class="tab-content" id="cc-2">
-										<div class="row">
+									<h3>Local&iacutezanos</h3>
+									<ul class="contacts">
+										<li><i class="icon-location contact"></i> Rúa Emilia Pardo Bazán, 3, A Coruña</li>
+										<li><i class="icon-mobile contact"></i>  +34 91 740 7272</li>
+										<li><a href="mailto:info@mimamimelena.com"><i class="icon-mail-1 contact"></i> info@mimamimelena.com</a></li>
+									</ul><!-- /.contacts -->
+									
+									<div class="social-network">
+										<h3>Social</h3>
+										<ul class="social">
+											<li><a href="https://www.facebook.com/people/Dairy-Pe%C3%B1a-Peluqueria/100010809312745"><i class="icon-s-facebook"></i></a></li>
+											<li><a href="#"><i class="icon-s-twitter"></i></a></li>
+											<li><a href="#"><i class="icon-s-pinterest"></i></a></li>
 											
-											<div class="col-md-4 col-md-push-3 col-md-offset-1 col-sm-6 inner-left-xs inner-right-xs">
-												<figure><img src="images/acabado.jpg" alt=""></figure>
-											</div><!-- /.col -->
-											
-											<div class="col-md-3 col-md-pull-4 col-sm-6 inner-top-xs">
-												<h3>Acabado</h3>
-												<p>Si tu pelo es rizado tendrás que utilizar espuma o espray para definir tus rizos. Si tu pelo se encrespa mucho te vendrá bien un producto anti-encrespamiento. O si te has hecho un recogido y tienes el pelo fino, la laca hará que tu peinado dure intacto más tiempo. Los productos de styling son los últimos que debes aplicar en tu melena para conseguir el acabado que desees, sobre el cabello húmedo o seco, como toque final.</p>
-											</div><!-- /.col -->
-											
-											<div class="col-md-3 col-sm-6 inner-top-xs">
-												<h3>Tratamiento de calor</h3>
-												<p>Secadores, planchas, tenacillas… No deberías utilizar ninguna herramienta de calor sin aplicar antes un producto que proteja tu cabello de las altas temperaturas, sobre todo si está teñido o tienes mechas, porque es más seco. El protector evita que el pelo se rompa, que se deshidrate y también limita el encrespamiento. Aplícalo de medios a puntas antes de usar cualquier herramienta, sobre el pelo mojado o seco.</p>
-											</div><!-- /.col -->
-											
-										</div><!-- /.row -->
-									</div><!-- /.tab-content -->
-									 
-								</div><!-- /.panel-container -->
-								 
-							</div><!-- /.tabs -->
+										</ul><!-- /.social -->
+									</div><!-- /.social-network -->
+									
+								</div><!-- /.col -->
+								
+							</div><!-- /.row -->
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 					
 				</div><!-- /.container -->
 			</section>
 			
-			<!-- ============================================================= SECTION – CUIDADO·DEL·CABELLO : END ============================================================= -->
-			<!-- ============================================================= SECTION – PRODUCTOS ============================================================= -->
-		
-			<section id="productos" class="img-bg img-bg-soft tint-bg" style="background-image: url(images/banner.jpg);">
-				<div class="container inner">
-					
-					<div class="row">
-						<div class="col-md-8 col-sm-9">
-							<header>
-								<h1>Productos</h1>
-								<p>MimaMiMelena cuenta con una amplia gama de productos de la Marca de vanguardia Moroccanoil.
-									<br>Si quieres saber qu&eacute productos le vienen mejor a tu cabello, accede a nuestra p&aacutegina de productos.</p>
-							</header>
-							<a href="productos.php" class="btn btn-large">Visita nuestro cat&aacutelogo</a>
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-					
-				</div><!-- /.container -->
-			</section>
+			<!-- ============================================================= SECTION – CONTACT FORM : END ============================================================= -->
 			
-			<!-- ============================================================= SECTION – PRODUCTOS : END ============================================================= -->
 			
-			<section id="estilistas">
-				<div class="container inner">
-					
-					<div class="row">
-						<div class="col-md-8 col-sm-9 center-block text-center">
-							<header>
-								<h1>Nuestros estilistas</h1>
-								<p>Ofrecemos profesionales titulados y que se encuentran en constante aprendizaje para realizar todo lo que le puedan proponer los clientes.</p>
-							</header>
-						</div><!-- /.col -->
-					</div><!-- ./row -->
-					
-					<div class="row">
-						<div class="col-xs-12 inner-top">
-							<div class="tabs tabs-services tabs-circle-top tab-container">
-								
-								<ul class="etabs text-center">
-									<li class="tab"><a href="#tab-1"><div><i class="icon-scissors"></i></div>Charlie</a></li>
-									<li class="tab"><a href="#tab-2"><div><i class="icon-brush"></i></div>Maria</a></li>
-								</ul><!-- /.etabs -->
-								
-								<div class="panel-container">
-									
-									<div class="tab-content" id="tab-1">
-										<div class="row">
-											
-											<div class="col-md-5 col-md-offset-1 col-sm-6 inner-right-xs">
-												<figure><img src="images/estilistas/charlie.jpg" alt=""></figure>
-											</div><!-- /.col -->
-											
-											<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
-												<h3>Charlie</h3>
-												<p>Si quieres un estilo totalmente desenfadado y un poco de atrevimiento, &iexcleste es tu hombre!</p>
-											</div><!-- /.col -->
-											
-										</div><!-- /.row -->
-									</div><!-- /.tab-content -->
-									
-									<div class="tab-content" id="tab-2">
-										<div class="row">
-											
-											<div class="col-md-5 col-md-push-5 col-md-offset-1 col-sm-6 col-sm-push-6 inner-left-xs">
-												<figure><img src="images/estilistas/maria.jpg" alt=""></figure>
-											</div><!-- /.col -->
-											
-											<div class="col-md-5 col-md-pull-5 col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
-												<h3>Maria</h3>
-												<p>Recogidos, tintes, permanentes, para todo lo que necesites María es la mejor elección</p>
-											</div><!-- /.col -->
-											
-										</div><!-- /.row -->
-									</div><!-- /.tab-content -->
-									 
-								</div><!-- /.panel-container -->
-								 
-							</div><!-- /.tabs -->
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-					
-				</div><!-- /.container -->
-			</section>
+			<!-- ============================================================= SECTION – MAP ============================================================= -->
 			
-			<!-- ============================================================= SECTION – ESTILISTAS : END ============================================================= -->
-
+			<div id="map" class="height-sm"></div>
 			
-
+			<!-- ============================================================= SECTION – MAP : END ============================================================= -->
 			
 		</main>
 		
@@ -321,7 +233,7 @@ if(isset($_SESSION['usuario'])) {
 					<div class="col-md-4 col-sm-6 inner">
 						<h4>Qui&eacutenes somos</h4>
 						<p>Somos una empresa dedicada a la peluquer&iacutea con el objetivo de llegar a la mayor cantidad de personas interesadas de este sector.</p>
-						<a href="contacto.php" class="txt-btn">&iquestQuieres saber m&aacutes?</a>
+						<a href="contacto.html" class="txt-btn">&iquestQuieres saber m&aacutes?</a>
 					</div><!-- /.col -->
 					
 					<div class="col-md-4 col-sm-6 inner">
@@ -359,8 +271,10 @@ if(isset($_SESSION['usuario'])) {
 				</div><!-- /.row --> 
 			</div><!-- .container -->
 		</footer>
+		
 		<!-- ============================================================= FOOTER : END ============================================================= -->
 		
+		<!-- JavaScripts placed at the end of the document so the pages load faster -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.easing.1.3.min.js"></script>
 		<script src="assets/js/jquery.form.js"></script>
@@ -374,9 +288,39 @@ if(isset($_SESSION['usuario'])) {
 		<script src="assets/js/owl.carousel.min.js"></script>
 		<script src="assets/js/jquery.isotope.min.js"></script>
 		<script src="assets/js/jquery.easytabs.min.js"></script>
-		<script src="assets/js/google.maps.api.v3.js"></script>
 		<script src="assets/js/viewport-units-buggyfill.js"></script>
 		<script src="assets/js/scripts.js"></script>
-		<script src="js/scriptEstilistas.js"></script>
+		<script src="assets/js/mapa.js"></script>
+		<style>
+		#map {
+  height: 400px;
+  width: 100%;
+ }
+</style>
+
+
+<script>
+	function initMap() {
+  var uluru = {lat: 43.363882, lng: -8.406956};
+
+
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 20,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+}
+</script>
+		  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSqmBvmoR4W4-KxH0OOIX1Zzl10NO37jQ&callback=initMap">
+    </script>
+
+
+
+
 	</body>
 </html>
