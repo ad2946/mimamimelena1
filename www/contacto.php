@@ -93,7 +93,7 @@ if(isset($_SESSION['usuario'])) {
 							
 							<ul class="nav navbar-nav pull-right">
 							
-								<li><a href="index.html" class="scroll-to" data-anchor-offset="0">HOME</a></li>
+								<li><a href="index.php" class="scroll-to" data-anchor-offset="0">HOME</a></li>
 				
 								
 								<?php
