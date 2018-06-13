@@ -100,7 +100,12 @@ if(isset($_SESSION['usuario'])) {
 
 								<?php
 									if(isset($_SESSION['usuario'])){?>
-										<li><a href='infoUser.php'><span class='glyphicon glyphicon-user'></span> <?php echo $nombre." ".$apellidos; ?></a></li>
+										<li><a href="#" class="dropdown-toggle js-activated"><i class="icon-user"></i> <?php echo $nombre." ".$apellidos; ?></a>
+											<ul class="dropdown-menu">
+												<li><a href='infoUser.php'><i class="icon-cog"></i> Mi cuenta</a></li>
+												<li><a href='logout.php'><i class="icon-logout"></i> Cerrar Sesi&oacuten</a></li>
+											</ul>
+										</li>
 								<?php
 									}else {
 								?>
@@ -321,7 +326,8 @@ if(isset($_SESSION['usuario'])) {
 					<div class="col-md-4 col-sm-6 inner">
 						<h4>Qui&eacutenes somos</h4>
 						<p>Somos una empresa dedicada a la peluquer&iacutea con el objetivo de llegar a la mayor cantidad de personas interesadas de este sector.</p>
-						<a href="contacto.php" class="txt-btn">&iquestQuieres saber m&aacutes?</a>
+						<a href="contacto.php" class="txt-btn">&iquestQuieres saber m&aacutes?</a><br>
+						<a href="avisolegal.php" class="txt-btn">Aviso legal</a>
 					</div><!-- /.col -->
 					
 					<div class="col-md-4 col-sm-6 inner">

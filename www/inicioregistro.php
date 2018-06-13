@@ -220,7 +220,8 @@
 					<div class="col-md-4 col-sm-6 inner">
 						<h4>Qui&eacutenes somos</h4>
 						<p>Somos una empresa dedicada a la peluquer&iacutea con el objetivo de llegar a la mayor cantidad de personas interesadas de este sector.</p>
-						<a href="contacto.html" class="txt-btn">&iquestQuieres saber m&aacutes?</a>
+						<a href="contacto.php" class="txt-btn">&iquestQuieres saber m&aacutes?</a><br>
+						<a href="avisolegal.php" class="txt-btn">Aviso legal</a>
 					</div><!-- /.col -->
 					
 					<div class="col-md-4 col-sm-6 inner">
