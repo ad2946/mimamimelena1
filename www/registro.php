@@ -103,7 +103,7 @@ else {
 			$result = mysqli_query($connection, $query);
 
 			if ($result) {
-				header("Location: index.html");
+				header("Location: index.php");
 			} else {
 				die("Database query failed. " . mysqli_error($connection));
 	}
